@@ -1,0 +1,10 @@
+^C:\USERS\IBM\SOURCE\REPOS\HACKERRANK\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/IBM/source/repos/HackerRank -BC:/Users/IBM/source/repos/HackerRank/build --check-stamp-file C:/Users/IBM/source/repos/HackerRank/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

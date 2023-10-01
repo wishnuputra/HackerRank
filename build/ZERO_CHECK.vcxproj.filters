@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\IBM\source\repos\HackerRank\build\CMakeFiles\c49e63e1442b6f3c86798f1a90dc241c\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{671539B2-8C8E-36EA-80D2-EE9177ED155A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
