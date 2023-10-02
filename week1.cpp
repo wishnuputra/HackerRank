@@ -2,6 +2,11 @@
 #include <iomanip>
 #include <algorithm>
 #include <numeric>
+#include <cmath>
+#include <cstdio>
+#include <iostream>
+#include <algorithm>
+#include <regex>
 
 using namespace std;
 
@@ -99,9 +104,36 @@ void testTimeConversion()
     cout << timeConversion("100:00:00PM") << endl;
 }
 
+void camelCase()
+{
+    string user_input;
+    string result;
+    cin >> user_input;
+
+    char operation_type = user_input[0];
+    char text_type = user_input[2];
+    string text = user_input.substr(4);
+    const regex pattern("^(?=.*[A-Z])");
+    // cout << text;
+    if (operation_type == 'S')
+    {
+        switch (text_type)
+        {
+            case 'M':
+                std::smatch m{};
+                regex_search(text, m, pattern);
+                cout << m.position();
+                break;
+        }
+        
+
+    }
+
+}
+
 void run()
 {
-    testTimeConversion();
+    camelCase();
 }
 
 }
