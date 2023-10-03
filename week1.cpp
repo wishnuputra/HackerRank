@@ -113,7 +113,7 @@ void camelCase()
     char operation_type = user_input[0];
     char text_type = user_input[2];
     string text = user_input.substr(4);
-    const regex pattern("^(?=.*[A-Z])");
+    const regex pattern("[A-Z]");
     // cout << text;
     if (operation_type == 'S')
     {
