@@ -122,8 +122,14 @@ void camelCase()
             case 'M':
                 std::smatch m{};
                 regex_search(text, m, pattern);
+
                 cout << m.position();
                 break;
+                // Loop over the text
+                // find the fist uppercase
+                // Put into stringstream
+                // repeat for the next uppercase
+                // until the end of string index
         }
         
 
